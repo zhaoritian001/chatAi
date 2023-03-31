@@ -9,7 +9,7 @@ const input = ref('')
 let message = ref('')
 const sendMessage = (data: string) => {
   axios({
-    url: `${import.meta.env.VITE_APP_BASE_URL}/chat/completions`,
+    url: `${import.meta.env.VITE_APP_BASE_URL}chat/completions`,
     method: 'POST',
     data: {
       apiKey: "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",
